@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void downloadImage(String url, String outputFileName) {
+    public void downloadImage(String url, String imageName) {
         DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
         request.setTitle(imageName);
         request.setDescription("Downloading " + imageName);
